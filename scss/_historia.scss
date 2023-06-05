@@ -1,0 +1,23 @@
+.sobremi-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobremi-contenedor img {
+  width: 350px;
+}
+
+@media (min-width: $tablet) {
+  .sobremi-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+
+  .sobremi {
+    text-align: center;
+  
+  }
+}

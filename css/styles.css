@@ -1,0 +1,278 @@
+/*TAMANIO FUENTE*/
+/*PANTALLAS*/
+/*MARGENES*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffc8dd;
+}
+
+header,
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 0;
+  top: 0;
+}
+
+@media (min-width: 990px) {
+  .banner {
+    background-image: url("../img/banners.png");
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    /*EFECTO PARALLAX*/
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+h1, h2, h3, h4 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 25px;
+}
+
+/*footer*/
+.margenes {
+  background-color: rgba(243, 140, 209, 0.6);
+  margin: 4px;
+  padding: 2px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.margenes .margenes img {
+  width: 30px;
+  gap: 15px;
+}
+
+.padre-redes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (min-width: 750px) {
+  .margenes {
+    background-color: rgba(243, 140, 209, 0.6);
+    margin: 4px;
+    padding: 2px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  .margenes .margenes img {
+    width: 30px;
+    gap: 15px;
+  }
+  .padre-redes {
+    flex-direction: column;
+    position: fixed;
+    top: 40%;
+    right: 2%;
+  }
+  .titulo-redes {
+    display: none;
+  }
+}
+.redes {
+  width: 35px;
+}
+
+/*mobile*/
+.img,
+.carousel-item-active img,
+.carousel-item img {
+  height: 70vh;
+}
+
+@media (min-width: 750px) {
+  .carousel-item-active img,
+  .carousel-item img {
+    width: 60%;
+  }
+}
+/*PARA DESKOPT*/
+@media (min-width: 990px) {
+  .carousel-item img {
+    width: 950px;
+    height: 100vh;
+  }
+  .banner {
+    background-image: url("../img/banners.png");
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    /*EFECTO PARALLAX*/
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/*MOBILE*/
+.card:hover {
+  transform: scale(1.2);
+}
+
+.contenedor-cards-paletas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.contenedor-cards-paletas .card-body {
+  text-align: center;
+}
+.contenedor-cards-paletas .card-text {
+  font-size: 15px;
+}
+
+.contenedor-cards-tortas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.contenedor-cards-tortas .card-body {
+  text-align: center;
+}
+.contenedor-cards-tortas .card-text {
+  font-size: 15px;
+}
+
+.contenedor-cards-panes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.contenedor-cards-panes .card-body {
+  text-align: center;
+}
+.contenedor-cards-panes .card-text {
+  font-size: 15px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contenedor-cards-chocolates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.contenedor-cards-chocolates .card-body {
+  text-align: center;
+}
+.contenedor-cards-chocolates .card-text {
+  font-size: 15px;
+}
+
+/*TABLET*/
+@media (min-width: 750px) {
+  .contenedor-cards-paletas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+  .contenedor-cards-tortas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+  .contenedor-cards-panes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+  .contenedor-cards-chocolates {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+}
+.atencion p {
+  margin-left: 15px;
+  text-align: center;
+}
+
+.contacto-contenedor {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 50px;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.contactame {
+  display: none;
+}
+
+@media (min-width: 990px) {
+  .contacto-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    justify-items: center;
+    gap: 30px;
+  }
+  .contactame {
+    display: inline-block;
+  }
+  .atencion p {
+    width: 100%;
+    text-align: justify;
+    font-weight: 600;
+  }
+}
+.sobremi-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sobremi-contenedor img {
+  width: 350px;
+}
+
+@media (min-width: 750px) {
+  .sobremi-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+  .sobremi {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

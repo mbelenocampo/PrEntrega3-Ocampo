@@ -1,0 +1,37 @@
+
+/*mobile*/
+.img,
+.carousel-item-active img,
+.carousel-item img {
+  height: 70vh;
+ }
+
+@media (min-width: $tablet) {
+  .carousel-item-active img,
+  .carousel-item img {
+    width: 60%;
+  }
+}
+
+/*PARA DESKOPT*/
+@media (min-width: $desktop) {
+   .carousel-item img{
+      width: 950px;
+      height: 100vh;
+       
+    }
+   
+ .banner {
+    background-image: url('../img/banners.png');
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+   /*EFECTO PARALLAX*/
+     background-attachment: fixed;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+}

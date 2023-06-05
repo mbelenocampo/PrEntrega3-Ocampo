@@ -1,0 +1,108 @@
+/*MOBILE*/
+
+.card:hover {
+    transform: scale(1.2);
+}
+.contenedor-cards-paletas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card-text {
+        font-size: $fuente-chica ;
+    }
+    }
+
+
+.contenedor-cards-tortas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card-text {
+        font-size: $fuente-chica ;
+    }
+}
+
+.contenedor-cards-panes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card-text {
+        font-size: $fuente-chica ;
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contenedor-cards-chocolates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card-text {
+        font-size: $fuente-chica ;
+    }
+}
+
+
+
+/*TABLET*/
+@media (min-width: $tablet) {
+    .contenedor-cards-paletas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 30px;
+    }
+
+    .contenedor-cards-tortas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 30px;
+    }
+
+    .contenedor-cards-panes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 30px;
+    }
+
+    .contenedor-cards-chocolates {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 30px;
+    }
+}
+

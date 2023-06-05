@@ -1,0 +1,97 @@
+* {
+   margin: 0;
+   padding: 0;
+ }
+ 
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $color-primario;
+ }
+
+ header,
+ .container-fluid {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 18px;
+   padding: 20px 0;
+   top: 0
+   
+ }
+
+ @media (min-width: $desktop) {
+ .banner {
+   background-image: url('../img/banners.png');
+   background-size: cover;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 70vh;
+  /*EFECTO PARALLAX*/
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ }
+
+ h1,h2,h3,h4 {
+   text-align: center;
+   margin-top:  $espacio-medio;
+ }
+
+ p {
+   font-size: $fuente-media;
+ }
+
+ /*footer*/
+.margenes {
+   background-color: rgba(243, 140, 209, 0.6);
+   margin: 4px;
+   padding: 2px;
+   position: absolute;
+   text-align: center;
+   width: 100%;
+ 
+ .margenes img {
+   width: 30px;
+   gap: 15px;
+ }
+}
+ 
+ .padre-redes {
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+ }
+ 
+ @media (min-width: $tablet) {
+   .margenes {
+      background-color: rgba(243, 140, 209, 0.6);
+      margin: 4px;
+      padding: 2px;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+    
+    .margenes img {
+      width: 30px;
+      gap: 15px;
+    }
+   }
+
+   .padre-redes {
+     flex-direction: column;
+     position: fixed;
+     top: 40%;
+     right: 2%;
+   }
+   .titulo-redes {
+     display: none;
+   }
+ }
+ .redes {
+   width: 35px;
+ }
+ 
