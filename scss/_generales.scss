@@ -4,9 +4,13 @@
  }
  
 
-body {
+  html, body {
+    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
     background-color: $color-primario;
+    margin-left: $espacio-mini;
+    margin-right: $espacio-mini;
+    margin-bottom: $espacio-chico;
  }
 
  header,
@@ -19,6 +23,7 @@ body {
    top: 0
    
  }
+
 
  @media (min-width: $desktop) {
  .banner {
@@ -36,11 +41,17 @@ body {
 }
  }
 
- h1,h2,h3,h4 {
+ h1 {
+  text-decoration: underline;
    text-align: center;
    margin-top:  $espacio-medio;
+   margin-bottom: $espacio-chico;
  }
-
+h2, h3 {
+  text-align: center;
+  margin-top: $espacio-medio;
+  margin-bottom: $espacio-medio;
+}
  p {
    font-size: $fuente-media;
  }
@@ -48,36 +59,33 @@ body {
  /*footer*/
 .margenes {
    background-color: rgba(243, 140, 209, 0.6);
-   margin: 4px;
-   padding: 2px;
-   position: absolute;
    text-align: center;
    width: 100%;
+   margin: 0 auto;
  
  .margenes img {
-   width: 30px;
-   gap: 15px;
+   width: 50px;
+   gap: 20px;
  }
 }
  
  .padre-redes {
-   display: flex;
-   justify-content: center;
-   gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px
  }
  
  @media (min-width: $tablet) {
    .margenes {
-      background-color: rgba(243, 140, 209, 0.6);
-      margin: 4px;
-      padding: 2px;
-      position: absolute;
-      text-align: center;
-      width: 100%;
-    
+    background-color: rgba(243, 140, 209, 0.6);
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+
     .margenes img {
-      width: 30px;
-      gap: 15px;
+      width: 70px;
+      gap: 20px;
     }
    }
 

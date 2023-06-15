@@ -1,37 +1,124 @@
-
 /*mobile*/
-.img,
-.carousel-item-active img,
-.carousel-item img {
-  height: 70vh;
- }
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+
+}
 
 @media (min-width: $tablet) {
-  .carousel-item-active img,
-  .carousel-item img {
-    width: 60%;
+  .presentacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+
+  .carouselExampleFade {
+    width: 70%;
+  }
+
+  .comentarios {
+    width: 70%;
+    margin: 0 auto;
+    gap: 20px;
   }
 }
 
-/*PARA DESKOPT*/
+
 @media (min-width: $desktop) {
-   .carousel-item img{
-      width: 950px;
-      height: 100vh;
-       
+  .presentacion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+  }
+
+  .comentarios {
+    width: 30%;
+    margin: 0 auto;
+    gap: 20px;
+  }
+}
+
+/*VIDEO*/
+.video {
+  size-adjust: 35px;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#carouselExample {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#carouselExampleFade {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-item img {
+  height: 80vh;
+}
+
+
+@media (min-width: $tablet) {
+
+  #carouselExample {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #carouselExampleFade {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  /*PARA DESKOPT*/
+  @media (min-width: $desktop) {
+    #carouselExample {
+      width: 55%;
+
     }
-   
- .banner {
-    background-image: url('../img/banners.png');
-    background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 70vh;
-   /*EFECTO PARALLAX*/
-     background-attachment: fixed;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
- }
+
+    .banner {
+      background-image: url('../img/banners.png');
+      background-size: cover;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 70vh;
+      /*EFECTO PARALLAX*/
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
